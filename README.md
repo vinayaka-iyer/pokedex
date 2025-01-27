@@ -1,8 +1,6 @@
-# Pokedex using Pokeapi, React, Redux, RTK Query
+# Project Documentation: Pokedex using Redux and RTKQuery
 
-### Redux and RTK Query Code Breakdown
-
----
+## Redux and RTK Query Code Breakdown
 
 #### 1. **What is Redux and RTK Query?**
 - **Redux**: A state management library to manage the state of your app globally.
