@@ -6,7 +6,7 @@ import { Card } from './components/ui/card';
 import { useGetPokemonDetailsQuery } from './redux/pokemonApiSlice';
 
 const App: React.FC = () => {
-    const { data, isLoading } = useGetPokemonDetailsQuery('pikachu' || null);
+    const { data } = useGetPokemonDetailsQuery('pikachu');
   return (
     <Router>
       <Card className="bg-card px-4 border-0 justify-between flex gap-6 rounded-2xl w-full">
