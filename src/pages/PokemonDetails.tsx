@@ -1,8 +1,10 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useGetPokemonDetailsQuery } from '../redux/pokemonApiSlice';
+import { Button } from '@/components/ui/button';
 
 const PokemonDetails: React.FC = () => {
+  const navigate = useNavigate()
   const { name } = useParams();
   const { data, isLoading } = useGetPokemonDetailsQuery(name || '');
 
@@ -29,6 +31,8 @@ const PokemonDetails: React.FC = () => {
             ability.ability.name
           ).join(', ')}
         </div>
+        <Button className='mx-auto my-2' onClick={() => navigate('/')}>Go Back</Button>
+
       </div>
     </div>
   );
